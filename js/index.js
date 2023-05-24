@@ -1,4 +1,4 @@
-const url = "/posts/";
+const url = "/blog/posts/";
 const allPostsUrl = url + "posts.json";
 const errPostUrl = url + "404.md";
 const focusPostId = "post-focus";
