@@ -1,6 +1,7 @@
-const url = "/blog/posts/";
-const allPostsUrl = url + "posts.json";
-const errPostUrl = url + "404.md";
+const subdomain = "/blog"
+const postsUrl = subdomain + "posts/";
+const allPostsUrl = postsUrl + "posts.json";
+const errPostUrl = postsUrl + "404.md";
 const focusPostId = "post-focus";
 const sidebarTagId = "post-list";
 
@@ -27,7 +28,7 @@ function set_content(tagId, content) {
  */
 function load_post(tagId, post) {
     var element = document.getElementById(tagId);
-    element.setAttribute("src", post.url);
+    element.setAttribute("src", postsUrl + post.file);
 }
 
 function load_post_error(tagId) {
