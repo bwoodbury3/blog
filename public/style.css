@@ -12,7 +12,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Lexend Deca", "Helvetica Neue", Verdana, Arial, sans-serif;
     color: #444444;
 }
@@ -62,8 +62,8 @@ body {
  */
 
 .post-sidebar {
-    width: calc(30% - 40px);
-    margin-left: 20px;
+    width: calc(30% - 50px);
+    margin-left: 30px;
     margin-right: 20px;
     text-align: left;
     float: left;
@@ -76,7 +76,7 @@ body {
 
 .post-list li {
     padding: 10px;
-    border-top: 1px solid;
+    border-top: 1px solid #cccccc;
 }
 
 .post-list a {
@@ -90,6 +90,19 @@ body {
 
 .post-list a:hover {
     color: #888888;
+}
+
+.preview-title {
+    margin: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.preview-date {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
 }
 
 /*

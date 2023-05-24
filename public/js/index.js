@@ -65,7 +65,12 @@ function populate_sidebar() {
 
         var postList = ""
         for (var post of posts) {
-            postList += `<li><a href="?post=${post.name}">${post.name}</a></li>`;
+            postList += `<li>
+                <a href="?post=${post.name}">
+                    <p class="preview-title">${post.name}</p>
+                    <p class="preview-date">${post.date}</p>
+                </a>
+            </li>`;
         }
         set_content(sidebarTagId, postList);
     });
