@@ -1,0 +1,119 @@
+/*
+ * Global containers
+ */
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    font-family: "Lexend Deca", "Helvetica Neue", Verdana, Arial, sans-serif;
+    color: #444444;
+}
+
+/*
+ * Top banner
+ */
+
+.banner {
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.banner p {
+    margin-top: 5px;
+}
+
+.banner a {
+    color: #517e82;
+}
+
+/*
+ * Post container
+ */
+
+.content {
+    width: 100%;
+}
+
+.post-summaries {
+    width: calc(70% - 20px);
+    margin-left: 20px;
+    text-align: left;
+    float: left;
+
+    /* Hack to make the post section take up space while loading. */
+    min-height: 1px;
+}
+
+/*
+ * Sidebar
+ */
+
+.post-sidebar {
+    width: calc(30% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    float: left;
+}
+
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list li {
+    padding: 10px;
+    border-top: 1px solid;
+}
+
+.post-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-list a:visited {
+    color: inherit;
+}
+
+.post-list a:hover {
+    color: #888888;
+}
+
+/*
+ * Markdown stylesheet
+ */
+
+.markdown {}
+
+.markdown h1 {
+    font-size: 1.5em;
+}
+
+.markdown h2 {
+    font-size: 1.3em;
+}
+
+.markdown h3 {
+    font-size: 1em;
+}
+
+.markdown p {
+    font-size: 1em;
+}
+
+.markdown a {
+    color: #517e82;
+}
