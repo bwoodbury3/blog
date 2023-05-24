@@ -1,4 +1,4 @@
-const subdomain = "/blog/"
+const subdomain = "/"
 const postsUrl = subdomain + "posts/";
 const allPostsUrl = postsUrl + "posts.json";
 const errPostUrl = postsUrl + "404.md";
