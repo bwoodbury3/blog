@@ -39,6 +39,38 @@ body {
     color: #517e82;
 }
 
+.hamburger-menu {
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 /*
  * Post container
  */
@@ -62,11 +94,39 @@ body {
  */
 
 .post-sidebar {
-    width: calc(30% - 50px);
+    height: 100%;
     margin-left: 30px;
     margin-right: 20px;
     text-align: left;
     float: left;
+    background-color: white;
+    border-left: 1px solid;
+}
+
+/* Style for desktop sidebar */
+.fixed {
+    /* margin-left + margin-right + border-left */
+    width: calc(30% - 51px);
+}
+
+/* Style for collapsed hamburger menu */
+.collapse-menu {
+    position: fixed;
+    width: 0%;
+    right: -100%;
+    transition: right 0.5s;
+}
+
+/* Style for expanded hamburger menu */
+.expand-menu {
+    position: fixed;
+    width: 70%;
+    right: 0px;
+    transition: right 0.5s;
+}
+
+.post-sidebar h2 {
+    padding-left: 20px;
 }
 
 .post-list {
@@ -75,7 +135,7 @@ body {
 }
 
 .post-list li {
-    padding: 10px;
+    padding: 10px 20px;
     border-top: 1px solid #cccccc;
 }
 

@@ -3,7 +3,7 @@ const postsUrl = subdomain + "posts/";
 const allPostsUrl = postsUrl + "posts.json";
 const errPostUrl = postsUrl + "404.md";
 const focusPostId = "post-focus";
-const sidebarTagId = "post-list";
+const postListTagId = "post-list";
 
 /*
  * Set the content for a given tag.
@@ -72,7 +72,7 @@ function populate_sidebar() {
                 </a>
             </li>`;
         }
-        set_content(sidebarTagId, postList);
+        set_content(postListTagId, postList);
     });
 }
 
