@@ -80,8 +80,9 @@ body {
 }
 
 .post-summaries {
-    width: calc(70% - 20px);
+    width: calc(70% - 40px);
     margin-left: 20px;
+    margin-right: 20px;
     text-align: left;
     float: left;
 
@@ -95,7 +96,7 @@ body {
 
 .post-sidebar {
     height: 100%;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 20px;
     text-align: left;
     float: left;
@@ -106,13 +107,13 @@ body {
 /* Style for desktop sidebar */
 .fixed {
     /* margin-left + margin-right + border-left */
-    width: calc(30% - 51px);
+    width: calc(30% - 41px);
 }
 
 /* Style for collapsed hamburger menu */
 .collapse-menu {
     position: fixed;
-    width: 0%;
+    width: 70%;
     right: -100%;
     transition: right 0.5s;
 }

@@ -10,10 +10,13 @@ const hamburgerTagId = "hamburger-menu";
 var isExpanded = false;
 var isHamburger = false;
 
+/*
+ * Expands the hamburger menu.
+ */
 function expandSidebar() {
     var sidebar = document.getElementById(sidebarTagId);
-    sidebar.classList.remove("collapse-menu");
     sidebar.classList.remove("fixed");
+    sidebar.classList.remove("collapse-menu");
     sidebar.classList.add("expand-menu");
     isExpanded = true;
 
@@ -21,10 +24,13 @@ function expandSidebar() {
     hamburger.classList.add("change");
 }
 
+/*
+ * Collapses the hamburger menu.
+ */
 function collapseSidebar() {
     var sidebar = document.getElementById(sidebarTagId);
-    sidebar.classList.remove("expand-menu");
     sidebar.classList.remove("fixed");
+    sidebar.classList.remove("expand-menu");
     sidebar.classList.add("collapse-menu");
     isExpanded = false;
 
@@ -45,7 +51,7 @@ function convertToHamburger() {
 
     /* Set main content CSS */
     var posts = document.getElementById(summariesTagId);
-    posts.style.width = "calc(100% - 20px)";
+    posts.style.width = "calc(100% - 40px)";
 
     isHamburger = true;
 }
@@ -66,7 +72,7 @@ function convertToFloating() {
 
     /* Set main content CSS */
     var posts = document.getElementById(summariesTagId);
-    posts.style.width = "calc(70% - 20px)";
+    posts.style.width = "calc(70% - 40px)";
 
     isHamburger = false;
 }
