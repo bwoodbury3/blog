@@ -191,3 +191,18 @@ body {
 .markdown a {
     color: #517e82;
 }
+
+.markdown blockquote {
+    font-style: italic;
+}
+
+/* This is a hack to style a code block */
+.language-undefined {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.markdown img {
+    max-width: 80%;
+}
