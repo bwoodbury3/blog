@@ -51,7 +51,7 @@ function convertToHamburger() {
 
     /* Set main content CSS */
     var posts = document.getElementById(summariesTagId);
-    posts.style.width = "calc(100% - 40px)";
+    posts.style.width = "calc(100% - 20px)";
 
     isHamburger = true;
 }
@@ -72,7 +72,7 @@ function convertToFloating() {
 
     /* Set main content CSS */
     var posts = document.getElementById(summariesTagId);
-    posts.style.width = "calc(70% - 40px)";
+    posts.style.width = "calc(70% - 20px)";
 
     isHamburger = false;
 }

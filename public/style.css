@@ -4,7 +4,7 @@
 body {
     text-align: center;
     margin: 0px;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
 .page {
@@ -12,7 +12,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Lexend Deca", "Helvetica Neue", Verdana, Arial, sans-serif;
     color: #444444;
 }
@@ -79,10 +79,10 @@ body {
     width: 100%;
 }
 
-.post-summaries {
-    width: calc(70% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
+.posts {
+    width: calc(70% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: left;
     float: left;
 
@@ -204,5 +204,5 @@ body {
 }
 
 .markdown img {
-    max-width: 80%;
+    max-width: 100%;
 }
