@@ -36,8 +36,6 @@ Were it up to me I would’ve taken Wednesday easy and settled for 3k or so. But
 
 This put me at 130k for the month of May which beat my post-college era best of 115k set last year.
 
-<screenshot of garmin chart>
-
 ## Thursday
 Feeling pretty beat up at this point, I dropped down to 5k. Apparently this workout was so uninspiring that I didn’t even bother to write it down.
 

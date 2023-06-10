@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "Weekly Training Log (2023-06-09)",
+            "file": "training-log-2023-06-09.md",
+            "date": "2023-06-09"
+        },
+        {
             "name": "Sammamish North to South",
             "file": "sammamish-north-to-south.md",
             "date": "2023-06-03"
@@ -9,11 +14,6 @@
             "name": "Weekly Training Log (2023-06-02)",
             "file": "training-log-2023-06-02.md",
             "date": "2023-06-02"
-        },
-        {
-            "name": "Checking in",
-            "file": "checking-in.md",
-            "date": "2023-05-24"
         }
     ]
 }
