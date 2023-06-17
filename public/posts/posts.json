@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "The 10k Before the Storm",
+            "file": "10k-before-the-storm.md",
+            "date": "2023-06-17"
+        },
+        {
             "name": "Weekly Training Log (2023-06-16)",
             "file": "training-log-2023-06-16.md",
             "date": "2023-06-16"
