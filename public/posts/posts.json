@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "Weekly Training Log (2023-06-16)",
+            "file": "training-log-2023-06-16.md",
+            "date": "2023-06-16"
+        },
+        {
             "name": "Weekly Training Log (2023-06-09)",
             "file": "training-log-2023-06-09.md",
             "date": "2023-06-09"
