@@ -1,5 +1,5 @@
 # Weekly Training Log (2023-06-16)
-This week was getting back into the grove of extra yardage after practice
+This week was getting back into the groove of extra yardage after practice.
 
 Of note: we moved our Mercer Island swim plans from July 23rd to June 25th. We're ready to go and don't want to wait any longer! The crew is being assembled. More on that another time.
 
