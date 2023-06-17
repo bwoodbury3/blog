@@ -49,9 +49,7 @@ function get_posts(callback) {
         }
     })
         .then(response => response.json())
-        .then(function (response) {
-            callback(response)
-        });
+        .then(response => callback(response));
 }
 
 /*
@@ -77,31 +75,34 @@ function populate_sidebar() {
 }
 
 /*
- * Populate the latest post.
- *
- * @param name: The name of the post to render.
+ * Populate the post content.
  */
-function populate_post(name) {
+function populate_post() {
+    /*
+     * Fetch a list of posts from the server.
+     */
     get_posts(function (response) {
         var posts = response.posts;
+        posts.sort((first, second) => second.date.localeCompare(first.date));
+        const urlParams = new URLSearchParams(window.location.search);
 
-        if (name) {
-            /*
-             * If a post name is provided, try to render that post.
-             */
-            for (var post of posts) {
-                if (post.name === name) {
-                    load_post(focusPostId, post);
-                    return;
-                }
+        /*
+         * If a post name is not provided, set it to the latest post.
+         */
+        if (!urlParams.has("post")) {
+            urlParams.set("post", "latest");
+            window.location.search = urlParams.toString();
+        }
+        var name = urlParams.get("post")
+
+        /*
+         * Try to render the post.
+         */
+        for (var post of posts) {
+            if (post.name === name || name === "latest") {
+                load_post(focusPostId, post);
+                return;
             }
-        } else {
-            /*
-             * If a post name is not provided, display the latest post.
-             */
-            posts.sort((first, second) => second.date.localeCompare(first.date));
-            load_post(focusPostId, posts[0]);
-            return;
         }
 
         /* Couldn't find a post to show, provide an error */
@@ -109,14 +110,5 @@ function populate_post(name) {
     });
 }
 
-/*
- * Populate the post from the URL parameters. If no parameter is found, default
- * to the latest post.
- */
-function render_content() {
-    const urlParams = new URLSearchParams(window.location.search);
-    populate_post(urlParams.get("post"));
-}
-
 populate_sidebar();
-render_content();
+populate_post();

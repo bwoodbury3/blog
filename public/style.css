@@ -44,6 +44,7 @@ body {
     right: 20px;
     cursor: pointer;
     visibility: hidden;
+    z-index: 10;
 }
 
 .bar1,
@@ -122,12 +123,14 @@ body {
 .expand-menu {
     position: fixed;
     width: 70%;
-    right: 0px;
+    right: -10px;
+    top: 0px;
     transition: right 0.5s;
+    z-index: 2;
 }
 
 .post-sidebar h2 {
-    padding-left: 20px;
+    padding: 10px 0px 10px 20px;
 }
 
 .post-list {
