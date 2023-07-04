@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "Mercer Island",
+            "file": "mercer-island.md",
+            "date": "2023-06-25"
+        },
+        {
             "name": "The 10k Before the Storm",
             "file": "10k-before-the-storm.md",
             "date": "2023-06-17"
