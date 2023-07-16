@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "Weekly Training Log (2023-07-15)",
+            "file": "training-log-2023-07-15.md",
+            "date": "2023-07-15"
+        },
+        {
             "name": "Mercer Island",
             "file": "mercer-island.md",
             "date": "2023-06-25"
