@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "2024 SCY PNAs",
+            "file": "pna-2024.md",
+            "date": "2024-04-17"
+        },
+        {
             "name": "Weekly Training Log (2023-07-15)",
             "file": "training-log-2023-07-15.md",
             "date": "2023-07-15"
