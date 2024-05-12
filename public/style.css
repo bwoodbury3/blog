@@ -3,14 +3,6 @@
  */
 body {
     text-align: center;
-    margin: 0px;
-    padding: 0px 10px;
-}
-
-.page {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
 
     font-size: 14px;
     font-family: "Lexend Deca", "Helvetica Neue", Verdana, Arial, sans-serif;
@@ -21,125 +13,22 @@ body {
  * Top banner
  */
 
-.banner {
-    text-align: center;
-    border-bottom: 1px solid;
-}
-
-.banner h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
-}
-
-.banner p {
-    margin-top: 5px;
-}
-
-.banner a {
-    color: #517e82;
-}
-
-.hamburger-menu {
-    position: fixed;
-    right: 20px;
-    cursor: pointer;
-    visibility: hidden;
-    z-index: 10;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+.jumbotron {
+    background-image: url("/img/banner.jpeg");
+    background-size: cover;
+    background-position: 0% 55%;
 }
 
 /*
- * Post container
+ * Navbar.
  */
-
-.content {
-    width: 100%;
-}
-
-.posts {
-    width: calc(70% - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: left;
-    float: left;
-
-    /* Hack to make the post section take up space while loading. */
-    min-height: 1px;
-}
-
-/*
- * Sidebar
- */
-
-.post-sidebar {
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: left;
-    float: left;
-    background-color: white;
-    border-left: 1px solid;
-}
-
-/* Style for desktop sidebar */
-.fixed {
-    /* margin-left + margin-right + border-left */
-    width: calc(30% - 41px);
-}
-
-/* Style for collapsed hamburger menu */
-.collapse-menu {
-    position: fixed;
-    width: 70%;
-    right: -100%;
-    transition: right 0.5s;
-}
-
-/* Style for expanded hamburger menu */
-.expand-menu {
-    position: fixed;
-    width: 70%;
-    right: -10px;
-    top: 0px;
-    transition: right 0.5s;
-    z-index: 2;
-}
-
-.post-sidebar h2 {
-    padding: 10px 0px 10px 20px;
-}
 
 .post-list {
-    list-style-type: none;
-    padding: 0;
+    min-width: 20rem;
 }
 
 .post-list li {
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-top: 1px solid #cccccc;
 }
 

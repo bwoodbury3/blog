@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "Back in the Lake 2024",
+            "file": "back-in-the-lake.md",
+            "date": "2024-05-12"
+        },
+        {
             "name": "2024 SCY PNAs",
             "file": "pna-2024.md",
             "date": "2024-04-17"

@@ -2,47 +2,77 @@
 <html>
 
 <head>
-    <title>Brian Woodbury</title>
+    <title>brian woodbury</title>
     <meta name="description" content="Brian Woodbury">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Custom JS -->
     <script src="js/index.js"></script>
+    <!-- Markdown-to-HTML library -->
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 </head>
 
 <body>
-    <div class="page">
-        <div class="banner">
-            <!-- Thank you w3schools for this hilarious hack -->
-            <div class="hamburger-menu" id="hamburger-menu" onclick="toggleSidebar()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+    <div class="container px-0">
 
-            <h1>Brian Woodbury</h1>
-            <p>swimming log | <a href="https://www.strava.com/athletes/106341646">strava</a></p>
+        <!-- Jumbotron banner -->
+        <div class="jumbotron py-3 mx-0 mb-4 rounded-0">
+            <div class="row">
+                <!-- Title -->
+                <div class="col col-md-8 my-auto">
+                    <a href="?post=latest" class="text-white">
+                        <h3 class="mb-0 font-weight-normal">brian swims</h3>
+                    </a>
+                </div>
+
+                <!-- Navbar -->
+                <div class="col col-md-4 my-auto">
+                    <div class="row">
+                        <div class="col col-6 text-right">
+                            <p class="lead mb-0">
+                                <a href="https://www.strava.com/athletes/106341646" class="text-white">
+                                    strava
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col col-6 text-left">
+                            <div class="dropdown">
+                                <a class="lead text-white dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    id="narbarDropdownPosts"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    posts
+                                </a>
+                                <ul class="dropdown-menu post-list py-0 shadow"
+                                    id="post-list"
+                                    aria-labelledby="narbarDropdownPosts" >
+                                    <li><a href="#">Hello</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-            <div class="posts" id="post-summaries">
+        <!-- Main Content -->
+        <div class="w-100 px-3">
+            <!-- Posts -->
+            <div class="text-left" id="post-summaries">
                 <md-block class="post markdown" id="post-focus"></md-block>
-            </div>
-
-            <div class="post-sidebar" id="post-sidebar">
-                <h2>More Posts</h2>
-                <ul class="post-list" id="post-list"></ul>
             </div>
         </div>
     </div>
-</body>
 
-<head>
-    <!-- This has to be down here because it depends on the body being drawn -->
-    <!-- I am so bad at frontend lol -->
-    <script src="js/style.js"></script>
-</head>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 
 </html>
