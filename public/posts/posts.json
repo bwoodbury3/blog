@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "name": "June 2024 Update",
+            "file": "june-2024.md",
+            "date": "2024-07-06"
+        },
+        {
             "name": "Back in the Lake 2024",
             "file": "back-in-the-lake.md",
             "date": "2024-05-12"
