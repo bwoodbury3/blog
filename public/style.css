@@ -1,3 +1,11 @@
+:root {
+    --color-text-dark: #463D3F;
+    --color-text-li-hover: #888888;
+    --color-text-light: #FFFFFF;
+    --color-primary: #FFCDB3;
+    --color-accent: #B5828C;
+}
+
 /*
  * Global containers
  */
@@ -6,43 +14,44 @@ body {
 
     font-size: 14px;
     font-family: "Lexend Deca", "Helvetica Neue", Verdana, Arial, sans-serif;
-    color: #444444;
-}
-
-/*
- * Top banner
- */
-
-.jumbotron {
-    background-image: url("/img/banner.jpeg");
-    background-size: cover;
-    background-position: 0% 55%;
+    color: var(--color-text-dark);
 }
 
 /*
  * Navbar.
  */
 
-.post-list {
-    min-width: 20rem;
+.lead {
+    font-size: 1.5em;
 }
 
-.post-list li {
+.logo {
+    height: 1.5em;
+}
+
+.banner {
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.banner li {
     padding: 5px 20px;
-    border-top: 1px solid #cccccc;
 }
 
-.post-list a {
+.banner a {
     text-decoration: none;
     color: inherit;
 }
 
-.post-list a:visited {
+.banner a:visited {
     color: inherit;
 }
 
-.post-list a:hover {
-    color: #888888;
+.banner a:hover {
+    color: var(--color-text-li-hover);
+}
+
+.post-list {
+    min-width: 20rem;
 }
 
 .preview-title {
@@ -88,14 +97,20 @@ body {
     font-style: italic;
 }
 
+.markdown hr {
+    border-color: var(--color-accent);
+}
+
 /* This is a hack to style a code block */
 .language-undefined {
     padding: 10px;
-    border: 1px solid;
-    border-radius: 5px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    color: var(--color-text-dark);
 }
 
 .markdown img {
     max-width: 100%;
     max-height: 600px;
+    border-radius: 10px;
 }

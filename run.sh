@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd public
-python -m http.server
+../venv/bin/python -m http.server
