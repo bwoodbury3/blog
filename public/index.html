@@ -12,61 +12,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Custom JS -->
-    <script src="js/index.js"></script>
+    <!-- Page JS -->
+    <script type="module" src="js/blog.js"></script>
     <!-- Markdown-to-HTML library -->
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 </head>
 
 <body>
     <div class="container px-0">
-
-        <!-- Banner -->
-        <div class="px-3 mx-0 mb-4 rounded-0">
-            <div class="row banner mx-0 py-2">
-                <!-- Title -->
-                <div class="col col-md-8 row">
-                    <div class="col col-auto px-0 my-auto">
-                        <img src="/img/wave.svg" class="logo">
-                    </div>
-                    <div class="col px-2 text-left">
-                        <a href="?post=latest" class="lead my-auto w-auto">
-                            brian
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Navbar -->
-                <div class="col col-md-4 my-auto">
-                    <div class="row">
-                        <div class="col text-right">
-                            <p class="lead mb-0">
-                                <a href="https://www.strava.com/athletes/106341646">
-                                    strava
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col col-auto text-left">
-                            <div class="dropdown">
-                                <a class="lead dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    id="narbarDropdownPosts"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    posts
-                                </a>
-                                <ul class="dropdown-menu post-list py-0 shadow"
-                                    id="post-list"
-                                    aria-labelledby="narbarDropdownPosts" >
-                                    <li><a href="#">Hello</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="banner"></div>
 
         <!-- Main Content -->
         <div class="w-100 px-3">
