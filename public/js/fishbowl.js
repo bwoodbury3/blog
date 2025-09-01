@@ -2,8 +2,8 @@ import { set_content } from "/js/common.js"
 
 const fishbowlId = "fishbowl";
 const gameStateCookie = "fishbowl_game_state";
-const timeLimit = 5; // seconds
-const minWords = 1;
+const timeLimit = 60; // seconds
+const minWords = 10;
 
 /**
  * Game states.
@@ -262,21 +262,24 @@ class Game {
         // Begin game button handler.
         const begin_button = document.getElementById("fishbowl-button-begin");
         begin_button.onclick = () => {
+            const team1Err = document.getElementById("team-names-1-error-message");
+            const team2Err = document.getElementById("team-names-2-error-message");
+            const wordsErr = document.getElementById("fishbowl-err-add-word");
+            team1Err.textContent = "";
+            team2Err.textContent = "";
+            wordsErr.textContent = "";
+
+            this.gameState.team1 = [];
+            this.gameState.team2 = [];
+
             const team1Input = document.getElementById("team-names-1").value.trim();
             const team2Input = document.getElementById("team-names-2").value.trim();
             if (!team1Input) {
-                const errorMessage = document.getElementById("team-names-1-error-message");
-                errorMessage.textContent = "Please enter at least one player for Team 1.";
+                team1Err.textContent = "Please enter at least one player for Team 1.";
                 return;
             }
             if (!team2Input) {
-                const errorMessage = document.getElementById("team-names-2-error-message");
-                errorMessage.textContent = "Please enter at least one player for Team 2.";
-                return;
-            }
-            if (this.gameState.words.length < minWords) {
-                const errorMessage = document.getElementById("fishbowl-err-add-word");
-                errorMessage.textContent = `Please add at least ${minWords} words to the word list.`;
+                team2Err.textContent = "Please enter at least one player for Team 2.";
                 return;
             }
 
@@ -285,6 +288,19 @@ class Game {
             }
             for (const name of team2Input.split(",")) {
                 this.gameState.team2.push(name.trim());
+            }
+
+            if (this.gameState.team1.length < 2) {
+                team1Err.textContent = "Team 1 needs at least 2 players.";
+                return;
+            }
+            if (this.gameState.team2.length < 2) {
+                team2Err.textContent = "Team 2 needs at least 2 players.";
+                return;
+            }
+            if (this.gameState.words.length < minWords) {
+                wordsErr.textContent = `Please add at least ${minWords} words to the word list.`;
+                return;
             }
 
             this.gameState.state = States.ROUND_START;
