@@ -55,7 +55,7 @@ async function populate_sidebar() {
     var postList = ""
     for (const post of posts) {
         postList += `<li>
-            <a href="?post=${post.name}">
+            <a href="/?post=${post.name}">
                 <p class="preview-title">${post.name}</p>
                 <p class="preview-date">${post.date}</p>
             </a>
@@ -64,5 +64,9 @@ async function populate_sidebar() {
     set_content("post-list", postList);
 }
 
-render_common();
-populate_sidebar();
+async function loadPage() {
+    await render_common();
+    await populate_sidebar();
+}
+
+loadPage();

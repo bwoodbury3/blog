@@ -114,3 +114,13 @@ body {
     max-height: 600px;
     border-radius: 10px;
 }
+
+.fishbowl {
+    background-color: #ffffff;
+}
+
+.border-circle {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
