@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knight maze</title>
+    <link rel="stylesheet" href="/knight/style.css">
+    <link rel="icon" type="image/png" href="/knight/knight.png">
+  </head>
+  <body>
+    <div id="root" class="container center-content">
+      <h1 class="heading center-content">Knight Maze</h1>
+      <div id="map"></div>
+      <div id="map-message"></div>
+      <div class="center-content flex m-2">
+        <div class="w-small h-fit">
+          <p id="move-counter" class="m-0"></p>
+        </div>
+        <button id="reset-btn" class="btn mx-1">Reset</button>
+        <div>
+          <button id="new-puzzle-btn" class="btn">New Puzzle</button>
+          <div id="new-puzzle-dropdown" class="menu absolute right-0 right-content w-small hidden">
+            <button id="new-puzzle-easy-btn" class="menu-item">Easy</button>
+            <button id="new-puzzle-med-btn" class="menu-item">Medium</button>
+            <button id="new-puzzle-hard-btn" class="menu-item">Hard</button>
+            <button id="new-puzzle-expert-btn" class="menu-item">Expert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/knight/index.js"></script>
+  </body>
+</html>
