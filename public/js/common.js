@@ -55,7 +55,7 @@ async function populate_sidebar() {
     var postList = ""
     for (const post of posts) {
         postList += `<li>
-            <a href="/?post=${post.name}">
+            <a href="/blog.html?post=${post.name}">
                 <p class="preview-title">${post.name}</p>
                 <p class="preview-date">${post.date}</p>
             </a>

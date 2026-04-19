@@ -50,6 +50,10 @@ body {
     color: var(--color-text-li-hover);
 }
 
+.menu-list {
+    min-width: 10rem;
+}
+
 .post-list {
     min-width: 20rem;
 }
@@ -123,4 +127,36 @@ body {
     width: 70%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+}
+
+/*
+ * Landing page style
+ */
+.landing {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+.landing-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.landing-links li {
+    display: inline-block;
+    margin: 0 1.2em;
+}
+.landing-links a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+.landing-links a:hover {
+    color: var(--color-text-li-hover);
 }
